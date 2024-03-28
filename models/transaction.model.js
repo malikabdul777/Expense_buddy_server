@@ -12,7 +12,7 @@ const transactionSchema = new mongoose.Schema(
     },
     notes: {
       type: String,
-      required: [true, "A transaction must have a note"],
+      required: [false, "A transaction must have a note"],
     },
     category: {
       type: String,
