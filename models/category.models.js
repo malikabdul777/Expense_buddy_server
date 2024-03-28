@@ -5,6 +5,7 @@ const categorySchema = new mongoose.Schema(
     name: {
       type: String,
       required: [true, "Category name is required"],
+      unique: [true, "Category already exists"],
     },
     emoji: {
       type: String,
