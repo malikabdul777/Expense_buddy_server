@@ -5,7 +5,7 @@ const categorySchema = new mongoose.Schema(
     name: {
       type: String,
       required: [true, "Category name is required"],
-      unique: [true, "Category already exists"],
+      unique: true,
     },
     emoji: {
       type: String,
@@ -13,7 +13,7 @@ const categorySchema = new mongoose.Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   }
 );
 
