@@ -6,6 +6,10 @@ const transactionSchema = new mongoose.Schema(
       type: Number,
       required: [true, "A transaction must have a amount"],
     },
+    date: {
+      type: Date,
+      required: [true, "A transaction must have a date"],
+    },
     type: {
       type: String,
       required: [true, "A transaction must have a type"],

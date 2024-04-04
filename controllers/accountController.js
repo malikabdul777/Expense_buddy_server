@@ -1,4 +1,4 @@
-const Account = require("../models/accounts.models");
+const Account = require("../models/accounts.model");
 
 exports.getAllAccounts = async (req, res) => {
   try {
